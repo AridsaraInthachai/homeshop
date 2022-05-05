@@ -1,0 +1,357 @@
+section {
+  padding: 50px 50px 0;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 100px 0;
+}
+
+.col1 h1 {
+  width: 50%;
+  justify-content: center;
+}
+
+.col1 p {
+  margin-bottom: 15px;
+  width: 70%;
+}
+
+.head {
+  margin-bottom: 25px;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.head::before {
+  content: "";
+  position: absolute;
+  background: #e91e63;
+  width: 100%;
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+}
+
+.pic1 {
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* *-------------------------------------------------------------------------------------------------------------- */
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.col2 h1 {
+  width: 25%;
+  justify-content: center;
+}
+
+.col2 p {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.shop {
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+  position: relative;
+}
+
+.shop:hover {
+  color: rgb(99, 99, 99);
+  transition: color 0.13s ease-in-out;
+}
+
+.shop::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.5px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(114, 113, 113);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.shop:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.col3 {
+  margin-top: 10px;
+  display: grid;
+  grid-template-areas: "item1 item2 item2" "item1 item3 item3";
+}
+
+.item1 {
+  width: 100%;
+  height: 900px;
+  background: url(/img/about/op\(aom\).jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: item1;
+  padding: 70px;
+}
+.item2 {
+  width: 100%;
+  height: 450px;
+  background: url(/img/about/op\(ben\).jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: item2;
+}
+.item3 {
+  width: 100%;
+  height: 450px;
+  background: url(/img/about/op\(pure\).jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: item3;
+}
+
+.item1:hover {
+  outline: 2px solid white;
+  outline-offset: -40px;
+}
+
+.item2:hover {
+  outline: 2px solid black;
+  outline-offset: -30px;
+}
+
+.item3:hover {
+  outline: 2px solid black;
+  outline-offset: -30px;
+}
+
+/* *---------------------------------------------------------------------------------------------------------------------------------------- */
+
+.col4 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 60px;
+}
+
+.square {
+  background: rgba(37, 38, 43, 255);
+  width: 70px;
+  height: 70px;
+  float: left;
+  padding: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.square:hover {
+  color: black;
+  background: rgb(231, 231, 231);
+  transition: 0.2s ease-out;
+  cursor: default;
+}
+
+p .item4 .item5 .item6 {
+  float: left;
+}
+
+/* *-------------------------------------------------------------------------------------------------------------------------------- */
+.last {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.col5 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/img/about/anne-photo.JPG);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.col5 p {
+  margin-top: 15px;
+  color: white;
+}
+
+.col5 h1 {
+  font-weight: 300;
+  color: white;
+}
+
+form {
+  margin-top: 10px;
+}
+
+form input[type="text"] {
+  width: 30%;
+  height: 45px;
+  border: 0;
+  padding: 20px;
+}
+
+form button {
+  border: 0;
+  height: 45px;
+  width: 10%;
+  cursor: pointer;
+  background: rgb(238, 238, 238);
+}
+
+form button:hover {
+  background: black;
+  color: white;
+  transition: 0.25s ease-out;
+}
+
+/* *----------------------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 983px) {
+  section {
+    padding: 10px;
+  }
+
+  .col1 {
+    padding: 100px 20px 0;
+  }
+
+  .col1 h1 {
+    width: 55%;
+  }
+
+  .col1 p {
+    width: 80%;
+  }
+
+  .pic1 {
+    padding: 0 10px;
+  }
+
+  .col2 h1 {
+    width: 35%;
+  }
+
+  .shop {
+    font-size: 15px;
+  }
+
+  .col3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item1,
+  .item2,
+  .item3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+  }
+
+  .item1:hover {
+    outline-offset: -20px;
+  }
+
+  .item2:hover,
+  .item3.item3:hover {
+    outline: 2px solid black;
+    outline-offset: -20px;
+  }
+
+  .col4 {
+    font-size: 11px;
+    grid-gap: 5px;
+  }
+  .square {
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+  }
+  .last {
+    margin-top: 10px;
+  }
+
+  .col5 p {
+    margin: 0 5px;
+  }
+
+  form button {
+    width: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .col1 h1 {
+    width: 80%;
+  }
+
+  .col1 p {
+    width: 90%;
+  }
+
+  .pic1 {
+    padding: 0;
+  }
+
+  .col2 h1 {
+    width: 45%;
+  }
+
+  .col2 p {
+    width: 90%;
+  }
+
+  .col4 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 415px) {
+  .col1 h1 {
+    width: 90%;
+  }
+
+  .col2 h1 {
+    width: 65%;
+  }
+
+  .col5 p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 361px) {
+  .col1 h1 {
+    width: 100%;
+  }
+
+  .col1 p,
+  .col2 p {
+    font-size: 13px;
+  }
+
+  .col2 h1 {
+    width: 85%;
+  }
+
+  .col5 p {
+    font-size: 12px;
+  }
+}
