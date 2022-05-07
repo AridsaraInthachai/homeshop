@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: white;
+    background: #537e75;
 }
 
 .container {
@@ -22,9 +22,9 @@ body {
     font-size: 70px;
     letter-spacing: 0px;
     word-spacing: 2px;
-    color: black;
+    color: white;
     font-weight: 700;
-    text-decoration: none solid rgb(68, 68, 68);
+    text-decoration: none solid white;
     font-style: normal;
     
     
@@ -36,7 +36,7 @@ body {
     border-style: solid;
     
     border-radius: 10px;
-    background-color: rgb(41, 41, 41);
+    background-color: #c6563e;
     color: white;
     padding: 10px;
 }
@@ -47,20 +47,20 @@ button
     height: 35px;
     background-color: white;
     cursor: pointer;
-    color: black;
+    color: #c6563e;
     border: solid 1px;
-    border-color: black;
+    border-color: #c6563e;
     border-radius: 18px;
     margin: 2px;
     transition: background-color 300ms ease;
 }
 
 button:hover{
-    background-color: black;
+    background-color: #c6563e;
     cursor: pointer;
     color: white;
     border: solid 1px;
-    border-color: black;
+    border-color: #c6563e;
 }
 
 table {
@@ -87,7 +87,7 @@ section {
     padding: 5px 10px;
     border-radius: 10px;
     border: 0px;
-    background: #999999e5;
+    background: #c6563e;
     color: #fff;
     margin: 10px;
     font-size: 18px;
@@ -98,7 +98,7 @@ section {
 
 .btn__small:hover {
 
-    background: #5f5f5fe5;
+    background: #c6563e;
     color: #fff;
     cursor: pointer;
 }
@@ -108,7 +108,7 @@ section {
     /*padding: 10px 15px;*/
     border-radius: 10px;
     border: 0px;
-    background: #8d8d8de5;
+    background: #c6563e;
     color: #fff;
     margin-left: 20px;
     font-size: 18px;
@@ -116,11 +116,11 @@ section {
 }
 
 .btn_remove {
-    background: #ec4949;
+    background: white;
     transition: background-color 300ms ease;
 }
 .btn_remove:hover {
-    background: #ff3333;
+    background: white;
 }
 
 h4 {
@@ -132,8 +132,8 @@ nav {
     justify-content: space-between;
     width: 100%;
     height: 83px;
-    background: #333333e5;
-    box-shadow: 0 2px 10px -2px gray;
+    background: #c6563e;
+    box-shadow: 0 2px 10px -2px #c6563e;
     color: #fff;
 }
 
@@ -156,7 +156,7 @@ nav > * {
 }
 
 .cart__counter span {
-    color: black;
+    color: white;
     position: relative;
     /* top: 30%;
     left: 30%; */
@@ -169,7 +169,7 @@ nav > * {
     /*font-size: 25px !important;*/
 }
 .fa-shopping-cart:hover {
-    color: black;
+    color: #c6563e;
     /*font-size: 25px !important;*/
 }
 
@@ -190,8 +190,8 @@ nav > * {
     border-radius: 10px;
     z-index: 2;
     width: 700px;
-    box-shadow: 2px 2px 10px rgba(151, 146, 146, 0.924);
-    border-bottom: 1px solid #999999e5;
+    box-shadow: 2px 2px 10px #c6563e;
+    border-bottom: 1px solid #c6563e;
 
 }
 
@@ -225,7 +225,7 @@ nav > * {
     align-items: center;
     justify-content: center;
     width: 700px;
-    border-bottom: 1px dashed #999999e5;
+    border-bottom: 1px dashed #c6563e;
 }
 
 .cart_item >* {
@@ -312,13 +312,13 @@ nav > * {
     font-size: var(--smaller-font-size);
     /*font-size: 20px;*/
     margin: 13px;
-    color: #e91e63;
+    color: white;
 }
 
 .product__user {
     font-weight: 400;
     font-size: 12px;
-    color: rgb(138, 138, 138);
+    color: #c6563e;
     
 }
 
@@ -326,7 +326,7 @@ nav > * {
     position: relative;
     /* top: 10%; */
     bottom: 0;
-    background: black;
+    background: #c6563e;
     color: #fff;
     /* margin: 0 auto; */
     padding: 10px 20px;
@@ -342,7 +342,7 @@ nav > * {
 
 .btn__add__to__cart:hover {
     background: white;
-    color: black;
+    color: #c6563e;
 }
 
 @keyframes show__cart {
@@ -454,7 +454,7 @@ nav > * {
   }
   
   #myBtn:hover {
-    color: #e91e63; /* Add a dark-grey background on hover */
+    color:#778c4a; /* Add a dark-grey background on hover */
   }
 
   html {
@@ -467,7 +467,7 @@ nav > * {
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
-    background-color: black; /* Set a background color */
+    background-color: #c6563e; /* Set a background color */
     color: white; /* Text color */ 
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 10px; /* Some padding */
@@ -485,7 +485,7 @@ nav > * {
   }
 
   #cartbtn:hover {
-    background-color: #e91e63; /* Add a dark-grey background on hover */
+    background-color: #778c4a; /* Add a dark-grey background on hover */
   }
 
   #cartbtn .cart__counter{

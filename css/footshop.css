@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #24262b;
+    background-color: #a3503e;
     padding: 70px 0;
     z-index: 199;
 }
@@ -44,7 +44,7 @@
      position: absolute;
      left:0;
      bottom: -10px;
-     background-color: #e91e63;
+     background-color: #778c4a;
      height: 2px;
      box-sizing: border-box;
      width: 50px;
@@ -75,7 +75,7 @@
      display: inline-block;
      height: 40px;
      width: 40px;
-     background-color: rgba(255,255,255,0.2);
+     background-color: #c6563e;
      margin:0 10px 10px 0;
      text-align: center;
      line-height: 40px;
@@ -86,7 +86,7 @@
  }
 
  .footer-col .social-links a:hover{
-     color: #24262b;
+     color: #c6563e;
      background-color: #ffffff;
  }
 

@@ -1,6 +1,9 @@
 section {
   padding: 50px 50px 0;
 }
+body {
+  background-color: #537e75;
+}
 
 .col1 {
   display: flex;
@@ -28,7 +31,7 @@ section {
 .head::before {
   content: "";
   position: absolute;
-  background: #e91e63;
+  background: #c6563e;
   width: 100%;
   height: 2.5px;
   bottom: 0;
@@ -63,12 +66,12 @@ section {
   text-decoration: none;
   font-size: 18px;
   text-transform: uppercase;
-  color: black;
+  color: #c6563e;
   position: relative;
 }
 
 .shop:hover {
-  color: rgb(99, 99, 99);
+  color: white;
   transition: color 0.13s ease-in-out;
 }
 
@@ -80,7 +83,7 @@ section {
   height: 0.5px;
   bottom: 0;
   left: 0;
-  background-color: rgb(114, 113, 113);
+  background-color: white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -99,7 +102,7 @@ section {
 .item1 {
   width: 100%;
   height: 900px;
-  background: url(/img/about/op\(aom\).jpg);
+  background: url(/img/b1.jpg);
   background-position: center;
   background-size: cover;
   grid-area: item1;
@@ -108,7 +111,7 @@ section {
 .item2 {
   width: 100%;
   height: 450px;
-  background: url(/img/about/op\(ben\).jpg);
+  background: url(/img/ct1.jpg);
   background-position: center;
   background-size: cover;
   grid-area: item2;
@@ -116,24 +119,24 @@ section {
 .item3 {
   width: 100%;
   height: 450px;
-  background: url(/img/about/op\(pure\).jpg);
+  background: url(/img/t4.jpg);
   background-position: center;
   background-size: cover;
   grid-area: item3;
 }
 
 .item1:hover {
-  outline: 2px solid white;
+  outline: 2px solid #c6563e;
   outline-offset: -40px;
 }
 
 .item2:hover {
-  outline: 2px solid black;
+  outline: 2px solid #c6563e;
   outline-offset: -30px;
 }
 
 .item3:hover {
-  outline: 2px solid black;
+  outline: 2px solid #c6563e;
   outline-offset: -30px;
 }
 
@@ -146,7 +149,7 @@ section {
 }
 
 .square {
-  background: rgba(37, 38, 43, 255);
+  background: #c6563e;
   width: 70px;
   height: 70px;
   float: left;
@@ -156,8 +159,8 @@ section {
 }
 
 .square:hover {
-  color: black;
-  background: rgb(231, 231, 231);
+  color: #c6563e;
+  background: #c6563e;
   transition: 0.2s ease-out;
   cursor: default;
 }
@@ -178,8 +181,8 @@ p .item4 .item5 .item6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/img/about/anne-photo.JPG);
+  background: linear-gradient(#c6563e),
+    url(/img/ct3.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -214,7 +217,7 @@ form button {
 }
 
 form button:hover {
-  background: black;
+  background: #c6563e;
   color: white;
   transition: 0.25s ease-out;
 }
@@ -270,7 +273,7 @@ form button:hover {
 
   .item2:hover,
   .item3.item3:hover {
-    outline: 2px solid black;
+    outline: 2px solid #c6563e;
     outline-offset: -20px;
   }
 
