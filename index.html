@@ -1,146 +1,141 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+	<head>
 	<title>HOME SHOPPING</title>
-	<link rel="stylesheet" href="/css/home.css">
-	<link rel="stylesheet" href="/css/footer.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-</head>
+	</head>
 
-<body style="height: 1000px;">
-	<header>
-		<header>
-			<a href="index.html"><img src="/img/logo.png" width="100px" style="padding-left: 5px;"></a>
-			<div class="menu-btn"></div>
-			<div class="navigation">
-				<div class="navigation-items">
-					<a href="index.html">Home</a>
-					<a href="aboutus.html">About</a>
-					<a href="shop.html">Shop</a>
+		<body style="height: 1000px;">
+			<header>
+				<header>
+					<a href="index.html"><img src="img/logo.png" width="100px" style="padding-left: 5px; filter: invert(100);"></a>
+					<div class="menu-btn"></div>
+					<div class="navigation">
+						<div class="navigation-items">
+							<a href="index.html">Home</a>
+							<a href="aboutus.html">About</a>
+							<a href="shop.html">Shop</a>
+						</div>
+					</div>
+				</header>
+			</header>
+
+			<div class="slider">
+				<!-- fade css -->
+				<div class="myslide fade">
+					<div class="txt">
+						<h1>Bedroom</h1>
+						<a href="shop.html" id="url"><button type="button">SHOP</button></a>
+					</div>
+					<img img class="pic" src="img/hp1.jpg">
+					</div>
+
+				<div class="myslide fade">
+					<div class="txt">
+						<h1>Chair</h1>
+						<a href="shop.html" id="url"><button type="button">SHOP</button></a>
+					</div>
+					<img img class="pic" src="img/hp2.jpg">
 				</div>
-			</div>
-		</header>
-	</header>
 
-	<div class="slider">
-		<!-- fade css -->
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>GRAPHIC DESIGN</h1>
-				<p>Made in Photoshop.</p>
-				<a href="shop.html" id="url"><button type="button">SHOP</button></a>
-			</div>
-			<img img class="pic" src="/img/homepage/09_202.jpg">
-		</div>
-
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>PAINTING</h1>
-				<p>Sky is pink ,flowers are green if i want to paint.</p>
-				<a href="shop.html" id="url"><button type="button">SHOP</button></a>
-			</div>
-			<img img class="pic" src="/img/homepage/p11.jpg">
-		</div>
-
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>3D ANIMATION</h1>
-				<p>The world give life to me . I would give 3d to be live.</p>
-				<a href="shop.html" id="url"><button type="button">SHOP</button></a>
-			</div>
-			<img img class="pic" src="/img/homepage/3Sushi.png">
-		</div>
-
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>AFTER EFFECT</h1>
-				<p>NOT RESPONDING</p>
-				<a href="shop.html" id="url"><button type="button">SHOP</button></a>
-			</div>
-			<img class="pic" src="/img/homepage/ae55.gif">
-
-		</div>
-
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>PHOTOGRAPHY</h1>
-				<p>Smile and cheese!!!!!!!</p>
-				<a href="shop.html" id="url"><button type="button">SHOP</button></a>
-			</div>
-			<img img class="pic" src="/img/homepage/corruption_(aom).JPG">
-		</div>
-		<!-- /fade css -->
-
-		<!-- onclick js -->
-
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-		<div class="dotsbox" style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span>
-			<span class="dot" onclick="currentSlide(2)"></span>
-			<span class="dot" onclick="currentSlide(3)"></span>
-			<span class="dot" onclick="currentSlide(4)"></span>
-			<span class="dot" onclick="currentSlide(5)"></span>
-		</div>
-		<!-- /onclick js -->
-	</div>
-	<script type="text/javascript">
-		//Javacript for responsive navigation menu
-		const menuBtn = document.querySelector(".menu-btn");
-		const navigation = document.querySelector(".navigation");
-
-		menuBtn.addEventListener("click", () => {
-			menuBtn.classList.toggle("active");
-			navigation.classList.toggle("active");
-		});
-	</script>
-
-	<script src="/js/js.js"></script>
-
-	<!--footer-->
-	<footer class="footer">
-		<div class="contentfooter">
-			<div class="row">
-				<div class="footer-col">
-					<h4>company</h4>
-					<ul>
-						<li><a href="aboutus.html">About us</a></li>
-					</ul>
+				<div class="myslide fade">
+					<div class="txt">
+						<h1>Counter Bar</h1>
+						<a href="shop.html" id="url"><button type="button">SHOP</button></a>
+					</div>
+					<img img class="pic" src="img/hp3.jpg">
 				</div>
-				<div class="footer-col">
-					<h4>get help</h4>
-					<ul>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Shipping</a></li>
-						<li><a href="#">Returns</a></li>
-						<li><a href="#">Orders status</a></li>
-						<li><a href="#">Payment options</a></li>
-					</ul>
+
+				<div class="myslide fade">
+					<div class="txt">
+						<h1>Lamp</h1>
+						<a href="shop.html" id="url"><button type="button">SHOP</button></a>
+					</div>
+					<img class="pic" src="img/hp4.jpg">
+
 				</div>
-				<div class="footer-col">
-					<h4>Shop</h4>
-					<ul>
-						<li><a href="shop.html">Bedroom</a></li>
-            			<li><a href="shop.html">Counter Bar</a></li>
-            			<li><a href="shop.html">Chair</a></li>
-            			<li><a href="shop.html">Lamp</a></li>
-            			<li><a href="shop.html">Table</a></li>
-					</ul>
+
+				<div class="myslide fade">
+					<div class="txt">
+						<h1>Table</h1>
+						<a href="shop.html" id="url"><button type="button">SHOP</button></a>
+					</div>
+					<img img class="pic" src="img/hp5.jpg">
 				</div>
-				<div class="footer-col">
-					<h4>Follow us</h4>
-					<div class="social-links">
-						<a href="#"><i class="fab fa-facebook"></i></a>
-						<a href="#"><i class="fab fa-twitter"></i></a>
-						<a href="#"><i class="fab fa-instagram"></i></a>
-						<a href="#"><i class="fab fa-google"></i></a>
+				<!-- /fade css -->
+
+				<!-- onclick js -->
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="dotsbox" style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+				<!-- /onclick js -->
+			</div>
+			<script type="text/javascript">
+				//Javacript for responsive navigation menu
+				const menuBtn = document.querySelector(".menu-btn");
+				const navigation = document.querySelector(".navigation");
+
+				menuBtn.addEventListener("click", () => 
+				{
+					menuBtn.classList.toggle("active");
+					navigation.classList.toggle("active");
+				});
+			</script>
+
+			<script src="js/js.js"></script>
+
+			<!--footer-->
+			<footer class="footer">
+				<div class="contentfooter">
+					<div class="row">
+						<div class="footer-col">
+							<h4>company</h4>
+							<ul>
+								<li><a href="aboutus.html">About us</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>get help</h4>
+							<ul>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Shipping</a></li>
+								<li><a href="#">Returns</a></li>
+								<li><a href="#">Orders status</a></li>
+								<li><a href="#">Payment options</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Shop</h4>
+							<ul>
+								<li><a href="shop.html">Bedroom</a></li>
+            					<li><a href="shop.html">Counter Bar</a></li>
+            					<li><a href="shop.html">Chair</a></li>
+            					<li><a href="shop.html">Lamp</a></li>
+            					<li><a href="shop.html">Table</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Follow us</h4>
+							<div class="social-links">
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+								<a href="#"><i class="fab fa-google"></i></a>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</footer>
-</body>
-
+			</footer>
+		</body>
 </html>

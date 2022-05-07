@@ -53,7 +53,7 @@ header .navigation .navigation-items a:hover:before {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: #537e75; 
+  background: #537e75; /* darckblue */
 }
 .myslide {
   height: 655px;
@@ -74,7 +74,7 @@ header .navigation .navigation-items a:hover:before {
 }
 .prev:hover,
 .next:hover {
-  color: #778c4a; /* blue */
+  color: #c6563e; /* blue */
 }
 .next {
   right: 0;
@@ -86,3 +86,279 @@ header .navigation .navigation-items a:hover:before {
   bottom: 20px;
   cursor: pointer;
 }
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.myslide .txt h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 60px;
+  margin-bottom: 10px;
+  color: white;
+}
+.myslide .txt p {
+  margin-bottom: 20px;
+}
+
+.myslide .txt a button {
+  width: 130px;
+  height: 50px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 5px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid white;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.5s;
+  font-size: 15px;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.txt a button:hover {
+  border: 2px solid white;
+  background: white;
+  color: black;
+}
+.pic {
+  width: 100%;
+  display: inline-block;
+}
+/* /2 */
+
+/* javascript */
+.active,
+.dot:hover {
+  border-color: #c6563e; /* blue */
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* /muslide add fade */
+
+/* 3 */
+.txt {
+  position: absolute;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 35px;
+  top: 40%;
+  left: 15%;
+  -webkit-animation-name: posi;
+  -webkit-animation-duration: 2s;
+  animation-name: posi;
+  animation-duration: 2s;
+  z-index: 1;
+}
+@-webkit-keyframes posi {
+  from {
+    left: 25%;
+  }
+  to {
+    left: 15%;
+  }
+}
+@keyframes posi {
+  from {
+    left: 25%;
+  }
+  to {
+    left: 15%;
+  }
+}
+.txt h1 {
+  color: #00a7ff; /* blue */
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.txt p {
+  margin-bottom: 10px;
+}
+/* /3 */
+
+/* 4 */
+img {
+  transform: scale(1.5, 1.5);
+  -webkit-animation-name: zoomin;
+  -webkit-animation-duration: 40s;
+  animation-name: zoomin;
+  animation-duration: 40s;
+}
+@-webkit-keyframes zoomin {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+@keyframes zoomin {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+/* /4 */
+
+/* 5 */
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 12px 20px;
+  }
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  header .navigation .navigation-items a {
+    color: #222;
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
+  header .navigation .navigation-items a:before {
+    background: #222;
+    height: 5px;
+  }
+
+  header .navigation.active .navigation-items {
+    background: #fff;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  }
+
+  .menu-btn {
+    background: url(/img/homepage/menu.png) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .menu-btn.active {
+    z-index: 999;
+    background: url(/img/homepage/close.png) no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: 0.3s ease;
+  }
+
+  .myslide {
+    height: 860px;
+    overflow: hidden;
+  }
+  .txt {
+    letter-spacing: 2px;
+    line-height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: posi2;
+    -webkit-animation-duration: 2s;
+    animation-name: posi2;
+    animation-duration: 2s;
+  }
+
+  @-webkit-keyframes posi2 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
+
+  @keyframes posi2 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
+
+  .txt h1 {
+    font-size: 60px;
+  }
+  .txt p {
+    font-size: 20px;
+  }
+  .pic {
+    width: 100%;
+    display: inline-block;
+  }
+}
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 414px) {
+  .myslide {
+    height: 0px;
+    overflow: hidden;
+  }
+  .txt h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .txt p {
+    font-size: 30px;
+  }
+  pic {
+    position: absolute;
+    width: 100%;
+  }
+}
+/* /6 */
