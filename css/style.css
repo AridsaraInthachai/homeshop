@@ -106,7 +106,7 @@ header .navigation .navigation-items a:hover:before {
   }
 
   .menu-btn {
-    background: url(/img/about/menu.png) no-repeat;
+    background: url(/img/menu.png) no-repeat;
     filter: invert(100);
     background-size: 30px;
     background-position: center;
@@ -118,7 +118,7 @@ header .navigation .navigation-items a:hover:before {
 
   .menu-btn.active {
     z-index: 999;
-    background: url(/img/about/close.png) no-repeat;
+    background: url(/img/close.png) no-repeat;
     background-size: 25px;
     background-position: center;
     transition: 0.3s ease;
